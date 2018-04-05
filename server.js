@@ -92,8 +92,7 @@ app.put('/image', (req, res)=>{
 
 app.listen(process.env.PORT || 3000, ()=>{
 	console.log(`app is running on port ${process.env.PORT}`);
-}).catch(err => res.status(400).json('error connecting to server'))
-
+}).catch(console.log("error connecting to server")
 
 
 /*
